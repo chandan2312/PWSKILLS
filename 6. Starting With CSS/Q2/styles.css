@@ -1,0 +1,28 @@
+.paragraph {
+	font-family: Arial, sans-serif;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.paragraph__title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+.paragraph__content {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #666;
+}
+
+.paragraph--important {
+	background-color: yellow;
+	border-color: orange;
+}
+
+.paragraph--highlight {
+	background-color: #ffcccb;
+	border-color: #ff5722;
+}

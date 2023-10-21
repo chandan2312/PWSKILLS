@@ -1,0 +1,109 @@
+<!-- Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the for the form elements, and demonstrate how to apply opacity to one of the form sections. -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Styled Form</title>
+		<style>
+			/* Custom color palette */
+			:root {
+				--primary-bg-color: #3498db;
+				--secondary-bg-color: #f2f2f2;
+				--input-bg-color: #ffffff;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				background-color: var(--secondary-bg-color);
+			}
+
+			.form-container {
+				width: 500px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: var(--primary-bg-color);
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+				opacity: 0.9;
+			}
+
+			.form-group {
+				margin-bottom: 15px;
+			}
+
+			label {
+				display: block;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			select {
+				width: 450px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				background-color: var(--input-bg-color);
+				transition: border-color 0.3s;
+			}
+
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+			select:focus {
+				border-color: var(--primary-bg-color);
+			}
+
+			button[type="submit"] {
+				background-color: var(--primary-bg-color);
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			button[type="submit"]:hover {
+				background-color: #2980b9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form-container">
+			<h2>Styled Form</h2>
+			<form action="#" method="post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Your name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Your email"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label for="country">Country:</label>
+					<select id="country" name="country">
+						<option value="india">India</option>
+						<option value="usa">USA</option>
+						<option value="uk">UK</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

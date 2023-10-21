@@ -1,0 +1,53 @@
+<!-- Explain z-index with example -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			.container {
+				position: relative;
+			}
+			.box {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blanchedalmond;
+				text-align: center;
+				line-height: 100px;
+				font-size: 16px;
+			}
+			.box1 {
+				z-index: 1;
+				background-color: blueviolet;
+			}
+			.box2 {
+				z-index: 3;
+				left: 100px;
+				background-color: violet;
+			}
+			.box3 {
+				z-index: 2;
+				left: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			z-index is a CSS property that is used to control the stacking order of
+			elements in a web page when they overlap in the same stacking context.
+			Elements with a higher z-index value are displayed in front of elements with
+			a lower z-index value. This property is particularly useful when working with
+			layered elements, such as those in a complex layout, modals, or overlapping
+			images.
+		</p>
+		<div class="container">
+			<div class="box box1">Box 1</div>
+			<div class="box box2">Box 2</div>
+			<div class="box box3">Box 3</div>
+		</div>
+	</body>
+</html>

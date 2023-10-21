@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question-3</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+				background-color: #000;
+				padding: 10px;
+			}
+			.container a {
+				text-decoration: none;
+				color: white;
+			}
+			@media (max-width: 768px) {
+				.container {
+					background-color: grey;
+					/* width: 100%; */
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+				.subcontainer {
+					margin: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="subcontainer Home"><a href="#">Home</a></div>
+			<div class="subcontainer About"><a href="#">About</a></div>
+			<div class="subcontainer Services"><a href="#">Services</a></div>
+			<div class="subcontainer Portfolio"><a href="#">Portfolio</a></div>
+			<div class="subcontainer Contact"><a href="#">Contact</a></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 7</title>
+		<style>
+			.container {
+				border: 2px solid black;
+				width: 320px;
+				height: 235px;
+				margin: 10px auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.img {
+				border-radius: 10px;
+				width: 100%;
+				height: 210px;
+				background-color: cyan;
+				margin: 10px 10px 15px 10px;
+				box-sizing: border-box;
+			}
+			.container .img img {
+				display: block;
+				/* width: 250px; */
+				margin: 10px;
+				max-width: calc(100% - 20px);
+				max-height: auto;
+			}
+			.container:hover {
+				opacity: 0.5;
+			}
+			.container .para span {
+				margin: 5px;
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Please, Hover over image</p>
+		<div class="container">
+			<div class="img">
+				<img src="image.webp" alt="pw" />
+
+				<div class="para">
+					<p>
+						<span>Course Name:</span>
+						PW Skills Web Development
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 1</title>
+		<style>
+			img {
+				height: 100%;
+				width: 100%;
+				border-radius: 10px;
+			}
+			.photo-gallery {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(3, 250px);
+				/* align-items: center; */
+				gap: 20px;
+				padding: 20px;
+			}
+			.image-1 {
+				grid-column: 1 /3;
+				grid-row: 1/2;
+			}
+			.image-2 {
+				grid-column: 2/3;
+				grid-row: 2/3;
+			}
+			.image-3 {
+				grid-column: 3/4;
+				grid-row: 1/2;
+			}
+			.image-4 {
+				grid-column: 1/2;
+				grid-row: 2/4;
+			}
+			.image-5 {
+				grid-column: 2/3;
+				grid-row: 3/4;
+			}
+			.image-6 {
+				grid-column: 3 /4;
+				grid-row: 2/4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="photo-gallery">
+			<div class="image-1">
+				<img
+					src="https://images.pexels.com/photos/276267/pexels-photo-276267.jpeg?
+auto=compress&cs=tinysrgb&w=600"
+					alt="image-01"
+				/>
+			</div>
+			<div class="image-2">
+				<img
+					src="https://images.pexels.com/photos/34299/herbs-flavoring-seasoning-cooking.jpg?
+auto=compress&cs=tinysrgb&w=600"
+					alt="image-02"
+				/>
+			</div>
+			<div class="image-3">
+				<img
+					src="https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-
+design-159045.jpeg?auto=compress&cs=tinysrgb&w=600"
+					alt="image-03"
+				/>
+			</div>
+			<div class="image-4">
+				<img
+					src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?
+        auto=compress&cs=tinysrgb&w=600"
+					alt="image-04"
+				/>
+			</div>
+			<div class="image-5">
+				<img
+					src="https://images.pexels.com/photos/6074935/pexels-photo-6074935.jpeg?
+auto=compress&cs=tinysrgb&w=600"
+					alt="img-5"
+				/>
+			</div>
+			<div class="image-6">
+				<img
+					src="https://images.pexels.com/photos/4210610/pexels-photo-4210610.jpeg?
+        auto=compress&cs=tinysrgb&w=600"
+					alt="image-6"
+				/>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 2</title>
+		<style>
+			.container {
+				display: grid;
+				gap: 10px;
+				grid-template-columns: 100px 100px 100px;
+			}
+			.subcontainer {
+				display: flex;
+
+				padding: 20px;
+				font-size: 150%;
+				border-radius: 5px;
+				background-color: bisque;
+				text-align: center;
+				align-items: center;
+			}
+			.a {
+				grid-column: 1 /3;
+				grid-row: 1/2;
+			}
+			.b {
+				grid-column: 3/4;
+				grid-row: 1/3;
+			}
+			.c {
+				grid-column: 1/2;
+				grid-row: 2/3;
+			}
+			.d {
+				grid-column: 2;
+				grid-row: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="subcontainer a">A</div>
+			<div class="subcontainer b">B</div>
+			<div class="subcontainer c">C</div>
+			<div class="subcontainer d">D</div>
+		</div>
+	</body>
+</html>
