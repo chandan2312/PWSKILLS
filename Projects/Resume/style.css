@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* variables */
+:root {
+	--primary-color: #2695fd;
+	--primary-color-600: #1a60a2;
+	--primary-color-200: #66b5ff;
+	--secondary-color: #4d4d4d;
+	--text-color-muted: #9c9c9c;
+	--white: #f3f3f3;
+	--text-color: #1a1a1a;
+	--left-side-SidePadding: 0px 30px;
+}
+
+/* common style  */
+body {
+	background-color: white;
+	margin: 20px;
+	height: 100%;
+}
+.full {
+	height: 100%;
+}
+
+h2 {
+	font-size: 2.3em;
+}
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: var(--white);
+}
+p {
+	font-size: 1.2em;
+}
+
+/* layout  */
+.main-body {
+	display: flex;
+	height: 100%;
+	background-color: var(--secondary-color);
+	max-width: 1400px;
+	margin: auto;
+}
+.left-side {
+	width: 400px;
+	background-color: var(--secondary-color);
+	color: var(--white);
+}
+.right-side {
+	display: grid;
+	place-content: center;
+	min-height: 1530px;
+	width: calc(100% - 400px);
+}
+
+/* left side  */
+
+/* profile  */
+.profile {
+	height: 400px;
+	background-color: var(--primary-color);
+	text-align: center;
+	display: grid;
+	place-content: center;
+}
+.profile h2 {
+	margin-top: 10px;
+}
+.profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: auto;
+}
+.profile-links {
+	display: flex;
+	gap: 10px;
+}
+.profile-links a {
+	display: flex;
+	align-items: center;
+}
+.profile-links a i {
+	font-size: 1.5em;
+}
+
+/* .left-side info  */
+.left-side-info {
+	padding: 30px 50px;
+}
+.left-side-info h2 {
+	font-weight: 500;
+}
+.profile-section hr {
+	border: 2px solid var(--white);
+	margin-bottom: 20px;
+}
+
+.muted-text {
+	color: var(--text-color-muted);
+	font-size: 1.2em;
+}
+
+.section-info {
+	margin-left: 20px;
+}
+
+.section-skills {
+	margin-top: 30px;
+}
+
+.my-skill {
+	margin-bottom: 20px;
+}
+.my-skill progress {
+	width: 80%;
+}
+
+/* cerificate section  */
+.cerificate-section {
+	margin-bottom: 10px;
+}
+.cerificate-section a {
+	display: flex;
+	gap: 5px;
+}
+.cerificate-section a i {
+	display: grid;
+	place-content: center;
+}
+
+/* Interest section */
+.interest-item p {
+	display: inline-block;
+	margin: 5px;
+	border-radius: 5px;
+	padding: 2px 8px;
+	border: 1.5px solid var(--text-color-muted);
+}
+
+/* right-side resume */
+
+.right-side {
+	padding: 10px 4%;
+	background-color: var(--white);
+	color: var(--text-color-muted);
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.right-side .profile-section {
+	color: var(--text-color);
+}
+
+.right-side .profile-section h1 {
+	font-size: 2.5em;
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.right-side .profile-section hr {
+	border-color: var(--text-color);
+}
+
+/* project  */
+.right-side h2 {
+	font-size: 2em;
+	color: var(--text-color);
+	font-weight: 600;
+}
+.right-side h2 a {
+	color: var(--primary-color);
+	font-size: 2rem;
+}
+
+.t-stack {
+	font-weight: 500;
+	color: var(--text-color);
+}
+.my-projects {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.my-projects > div {
+	display: inline-block;
+}
+
+/* Education section  */
+.education-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.edu-subject {
+	display: flex;
+	justify-content: space-between;
+}
+.edu-subject h2:last-of-type {
+	color: var(--text-color-muted);
+	font-size: 1.5em;
+}
+.education h3 {
+	font-weight: 500;
+}
+
+/* Language section  */
