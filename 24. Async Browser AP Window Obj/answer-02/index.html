@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="btn-div">
+        <button class="btn">Get User Names</button>
+      </div>
+      <div class="output-list">
+        <ul class="list"></ul>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn");
+      const list = document.querySelector(".list");
+
+      // Creating a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      // Configuring the request (GET request to the provided API)
+      xhr.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+
+      // Setting up a callback function to handle the response
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          // Parse the JSON response
+          var users = JSON.parse(xhr.responseText);
+
+          // Log user names to the console
+          users.forEach(function (user) {
+            console.log(user);
+            list.innerHTML += `<li>${user.name}</li>`;
+          });
+        } else {
+          console.error("Error:", xhr.statusText);
+        }
+      };
+
+      // Handling network errors
+      xhr.onerror = function () {
+        console.error("Network error");
+      };
+
+      btn.addEventListener("click", function () {
+        // Sending the request
+        xhr.send();
+      });
+    </script>
+  </body>
+</html>
