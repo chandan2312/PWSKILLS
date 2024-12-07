@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail clone</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="box-border ">
+    <main>
+        <header class=" text-[0.8vw] ">
+            <nav class="flex items-center justify-between font-thin px-[1vw] py-[0.5vw] select-none  bg-[#F6F8FC]">
+                <div class="flex items-center gap-[1vw] text-[1vw]">
+                    <img class="cursor-pointer w-[6vw]" src="./assets/gmail-logo.png" alt="logo">
+                </div>
+                <form action="#" class="flex items-center py-[0.5vw] relative">
+                    <i class="ri-search-line text-[1vw] absolute left-[0.5vw] z-10"></i>
+                    <input
+                        class="bg-[#EAF1FB] pr-[20vw] py-[0.3vw] pl-[2vw] rounded-l-[1vw] border-[0.1vw] text-[#ccc] focus:outline-none focus:bg-white focus:drop-shadow-[0.1vw_0.1vw_0.1vw_#ccc]"
+                        type="text" placeholder="Search" required>
+                    <button
+                        class="px-[1vw] py-[0.12vw] rounded-r-[1vw] border-[0.05vw] shadow-[0.01vw_0.01vw_0.1vw_#ccc]"><i
+                            class="ri-menu-line cursor-pointer text-black text-[1vw] "></i></button>
+                </form>
+                <div class="flex items-center gap-[1.5vw] text-[1.2vw] mr-[1vw]  ">
+                    <i
+                        class="ri-question-mark text-[0.7vw] font-bold py-[0.05vw] px-[0.2vw] border-black border-[0.1vw] rounded-[1vw]"></i>
+
+                    <i class="ri-settings-2-line"></i>
+                    <i class="ri-list-unordered"></i>
+                    <img class="rounded-[5vw] cursor-pointer w-[2vw]" src="./assets/user-avater.png" alt="user-profile">
+                </div>
+            </nav>
+
+            <div class="flex">
+                <nav class="w-[15vw] bg-[#F6F8FC] text-[0.9vw]">
+                    <button
+                        class="px-[1.5vw] py-[0.8vw] text-[0.8vw] font-semibold bg-[#C2E7FF] rounded-[0.8vw] m-[0.5vw] hover:drop-shadow-[0.1vw_0.1vw_0.1vw_#ccc]"><i
+                            class="ri-pencil-line mr-[0.5vw]"></i>Compose</button>
+                    <ul>
+                        <li
+                            class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw] relative">
+                            <i class="ri-inbox-fill mr-[0.5vw]"></i><a href="#" class="font-semibold">Inbox</a><span
+                                class="font-semibold text-[0.8vw] absolute right-[1vw]">915</span></li>
+                        <li class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw]">
+                            <i class="ri-star-line mr-[0.5vw]"></i><a href="#" class="font-semibold">Starred</a></li>
+                        <li class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw]">
+                            <i class="ri-time-line mr-[0.5vw]"></i><a href="#" class="font-semibold">Snoozed</a></li>
+                        <li class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw]">
+                            <i class="ri-send-plane-2-line mr-[0.5vw]"></i><a href="#" class="font-semibold">sent</a>
+                        </li>
+                        <li class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw]">
+                            <i class="ri-draft-line mr-[0.5vw]"></i><a href="#" class="font-semibold">Drafts</a></li>
+                        <li class="cursor-pointer my-[0.2vw] px-[1.5vw] py-[0.2vw] hover:bg-[#D3E3FD] rounded-[0.5vw]">
+                            <i class="ri-arrow-down-s-line mr-[0.5vw]"></i><a href="#" class="font-semibold">More</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="w-full">
+                    <div class="w-full flex h-[2vw] justify-between items-center text-[0.8vw]">
+                        <div class="flex gap-[0.5vw] font-semibold">
+                            <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                            <i class="ri-restart-line"></i>
+                            <i class="ri-more-2-line"></i>
+                        </div>
+                        <div class="flex gap-[0.5vw] pr-[1vw]">
+                            <span>1-15 to 1,500</span>
+                            <i class="ri-arrow-left-s-line"></i>
+                            <i class="ri-arrow-right-s-line"></i>
+                            <i class="ri-keyboard-box-fill"></i>
+                        </div>
+                    </div>
+                    <div class="w-full h-[87vh] overflow-auto scrollbar" id="main">
+                        <div class="flex gap-[1vw] mx-[0.5vw]">
+                            <div class="mt-[1vw] border-b-[0.2vw] hover:border-b-blue-700">
+                                <button
+                                    class="flex gap-[0.5vw] text-[0.8vw] font-semibold  pr-[5vw] pl-[0.5vw] mx-[0.5vw] "><i
+                                        class="ri-inbox-fill mr-[0.5vw]"></i>Primary </button>
+
+                            </div>
+                            <div class="mt-[1vw] border-b-[0.2vw] hover:border-b-blue-700">
+                                <button
+                                    class="flex gap-[0.5vw] text-[0.8vw] font-semibold  pr-[5vw] pl-[0.5vw] mx-[0.5vw] "><i
+                                        class="ri-price-tag-3-line"></i></i>Promotions <span
+                                        class="px-[0.3vw] py-[0.05vw] text-[0.6vw] bg-green-700 text-white rounded-[1vw]">49
+                                        new</span></button>
+                                <span class="text-[#ccc] pl-[2vw] ">Twitter, Pw Skills, Youtube</span>
+                            </div>
+                            <div class="mt-[1vw] border-b-[0.2vw] hover:border-b-blue-700">
+                                <button
+                                    class="flex gap-[0.5vw] text-[0.8vw] font-semibold  pr-[5vw] pl-[0.5vw] mx-[0.5vw] "><i
+                                        class="ri-inbox-fill mr-[0.5vw]"></i>Social <span
+                                        class="px-[0.3vw] py-[0.05vw] text-[0.6vw] bg-blue-700 text-white rounded-[1vw]">45
+                                        new</span></button>
+                                <span class="text-[#ccc] pl-[2.5vw] ">instagram suggestions ...</span>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Pw Skills</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Twitter</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Discord</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Instagram</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Youtube</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Amazon</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Flipkart</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Pw Skills</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Twitter</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Discord</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Instagram</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Youtube</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Amazon</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Flipkart</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Pw Skills</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Twitter</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Discord</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Instagram</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Youtube</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Amazon</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="flex gap-[0.5vw] justify-between py-[0.5vw] border hover:shadow-[0.1vw_0.1vw_0.1vw_#ccc]">
+                                <div class="flex w-[10vw]">
+                                    <input class="mx-[1vw] w-[0.7vw]" type="checkbox" name="" id="">
+                                    <i class="ri-star-line mr-[0.5vw]"></i>
+                                    <h3 class="font-bold">Flipkart</h3>
+                                </div>
+                                <div class="w-[55vw]">
+                                    <p>Subject : Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div>
+                                    <span class="font-bold mr-[1.5vw]">09:25 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+    </main>
+</body>
+
+</html>

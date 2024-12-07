@@ -1,0 +1,179 @@
+/* Author: Rahul Dutta */
+
+main {
+  background-image: url("./assets/background-image.png");
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: transparent;
+  align-items: center;
+}
+h1 {
+  font-size: 82px;
+}
+
+p {
+  font-size: 32px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ed017f;
+  color: white;
+}
+
+button {
+  width: auto;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ed017f;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  width: auto;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #bb0064;
+  color: white;
+  border: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: Left;
+  width: 300px;
+
+  margin-top: 100px;
+  font-size: 28px;
+}
+.flex-icons img {
+  width: 32px;
+  height: auto;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #bb0064;
+  outline: 2px solid #bb0064;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.button:hover {
+  width: auto;
+  height: auto;
+  padding: 15px 30px;
+  background-color: #bb0064;
+  color: white;
+  border: none;
+}
+
+.floatbtn1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  font-size: 18px;
+  box-shadow: 15px 15px 55px grey;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50px;
+}
+
+.floatbtn1:hover {
+  font-size: 18px;
+  box-shadow: none;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50px;
+}
+
+.floatbtn2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  font-size: 18px;
+  box-shadow: 15px 15px 55px grey;
+  position: absolute;
+  top: 30%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50px;
+}
+
+.floatbtn2:hover {
+  font-size: 18px;
+  position: absolute;
+  box-shadow: none;
+  top: 30%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: auto;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50px;
+}

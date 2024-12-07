@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+:root {
+
+    --first-bg-color: #00b7ff;
+    --second-bg-color: #6c757d;
+    --main-color: #fff;
+}
+
+.first {
+    padding: 5px 20px;
+    background-color: var(--first-bg-color);
+    border: none;
+    color: var(--main-color);
+
+}
+
+
+.second {
+    background-color: var(--second-bg-color);
+    padding: 5px 20px;
+    border: none;
+    color: var(--main-color);
+
+}
