@@ -1,0 +1,62 @@
+<!-- Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you've named the classes -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BEM CSS Example</title>
+		<style>
+			/* BEM Class Naming Convention */
+			.paragraph {
+				font-family: Arial, sans-serif;
+				margin-bottom: 20px;
+				padding: 10px;
+				border: 1px solid #ccc;
+			}
+			.paragraph__title {
+				font-size: 18px;
+				font-weight: bold;
+				color: #333;
+			}
+			.paragraph__content {
+				font-size: 14px;
+				line-height: 1.4;
+				color: #666;
+			}
+			.paragraph--important {
+				background-color: yellow;
+				border-color: orange;
+			}
+			.paragraph--highlight {
+				background-color: #ffcccb;
+				border-color: #ff5722;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="paragraph">
+			<h2 class="paragraph__title">Introduction</h2>
+			<p class="paragraph__content">
+				Introduction <br />
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugit.
+			</p>
+		</div>
+
+		<div class="paragraph paragraph--important">
+			<h2 class="paragraph__title">Main Content</h2>
+			<p class="paragraph__content">
+				Main Content <br />
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt
+				facere adipisci recusandae! Rerum nihil ipsum laudantium a, reprehenderit
+				sapiente.
+			</p>
+		</div>
+
+		<div class="paragraph paragraph--highlight">
+			<h2 class="paragraph__title">Conclusion</h2>
+			<p class="paragraph__content">
+				Lorem ipsum dolor sit amet consectetur adipisicing.
+			</p>
+		</div>
+	</body>
+</html>

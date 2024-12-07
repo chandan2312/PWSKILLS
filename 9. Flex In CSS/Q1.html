@@ -1,0 +1,126 @@
+<!-- Describe the main differences between the CSS Flexbox layout model and the CSS Grid layout model. When would you choose to use one over the other? -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox vs. CSS Grid</title>
+	</head>
+	<body>
+		<h1>The CSS Flexbox Layout Model vs. the CSS Grid Layout Model</h1>
+
+		<p>
+			The CSS Flexbox layout model and the CSS Grid layout model are two powerful
+			tools for creating layouts in web design, but they have different purposes
+			and approaches. Here are the main differences between them, along with
+			scenarios where you might choose one over the other:
+		</p>
+
+		<h2>CSS Flexbox:</h2>
+		<ol>
+			<li>
+				<strong>One-Dimensional Layout:</strong> Flexbox is primarily designed for
+				one-dimensional layouts, either as a row or a column. It's best suited for
+				arranging items in a single direction.
+			</li>
+			<li>
+				<strong>Dynamic Sizing:</strong> Flexbox is great for handling varying
+				content sizes within a container. Items can expand or shrink to fill
+				available space based on content or specified rules.
+			</li>
+			<li>
+				<strong>Content-Centered:</strong> Flexbox is well-suited for aligning
+				content both horizontally and vertically within a container. It's
+				particularly useful for centering items.
+			</li>
+			<li>
+				<strong>Order Control:</strong> You can easily change the visual order of
+				flex items without altering their source order, which is useful for
+				responsive layouts.
+			</li>
+			<li>
+				<strong>No Grid Structure:</strong> Flexbox doesn't create a grid structure
+				with rows and columns; it focuses on distributing space along one axis.
+			</li>
+		</ol>
+
+		<h2>CSS Grid:</h2>
+		<ol>
+			<li>
+				<strong>Two-Dimensional Layout:</strong> CSS Grid is designed for
+				two-dimensional layouts, creating both rows and columns. It's perfect for
+				complex grid structures.
+			</li>
+			<li>
+				<strong>Fixed and Track Sizing:</strong> Grid allows you to set fixed sizes
+				for rows and columns, making it ideal for grid-based designs with specific
+				layout requirements.
+			</li>
+			<li>
+				<strong>Grid Lines and Gaps:</strong> You can define explicit grid lines and
+				gaps between rows and columns, providing precise control over the layout.
+			</li>
+			<li>
+				<strong>Grid Items:</strong> Grid items are placed on the grid and adhere to
+				both row and column positions. This enables complex, structured layouts.
+			</li>
+			<li>
+				<strong>Automatic Item Placement:</strong> Grid can automatically place
+				items in available cells without the need to explicitly specify positions.
+			</li>
+		</ol>
+
+		<h2>When to Use Flexbox:</h2>
+		<ul>
+			<li>
+				<strong>Single-Dimensional Layouts:</strong> Use Flexbox when you need to
+				arrange items in a single row or column, such as navigation menus, toolbars,
+				or aligning items within a container.
+			</li>
+			<li>
+				<strong>Dynamic Content:</strong> Flexbox is great for handling content of
+				varying sizes, ensuring items adjust to available space without breaking the
+				layout.
+			</li>
+			<li>
+				<strong>Centering Content:</strong> Flexbox is a good choice for centering
+				content horizontally and vertically within a container.
+			</li>
+			<li>
+				<strong>Changeable Order:</strong> If you need to change the order of items
+				for responsive design without changing the source order, Flexbox is a good
+				choice.
+			</li>
+		</ul>
+
+		<h2>When to Use CSS Grid:</h2>
+		<ul>
+			<li>
+				<strong>Two-Dimensional Grids:</strong> CSS Grid is ideal for creating
+				complex, two-dimensional layouts with rows and columns, like magazine-style
+				layouts or grids of images.
+			</li>
+			<li>
+				<strong>Fixed Layouts:</strong> When you require precise control over the
+				size of rows and columns, CSS Grid's ability to set fixed sizes is valuable.
+			</li>
+			<li>
+				<strong>Grid Lines and Gaps:</strong> If you need to create a grid structure
+				with explicit rows, columns, and gaps between them, CSS Grid provides
+				fine-grained control.
+			</li>
+			<li>
+				<strong>Structured Layouts:</strong> For layouts with items that need to be
+				placed in specific grid cells or regions, CSS Grid simplifies this task.
+			</li>
+		</ul>
+
+		<p>
+			In practice, it's common to use a combination of both Flexbox and CSS Grid
+			within a web layout, leveraging their respective strengths. Flexbox can be
+			used for arranging items within components, while CSS Grid can provide the
+			overall page structure and alignment. The choice between them depends on the
+			specific layout requirements of your project.
+		</p>
+	</body>
+</html>

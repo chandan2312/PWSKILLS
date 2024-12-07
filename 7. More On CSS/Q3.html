@@ -1,0 +1,71 @@
+<!--  3.Create a navigation bar similar to question 1. For each navigation item, use a different border style. -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 1</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				padding: 1rem;
+				background-color: cornflowerblue;
+			}
+			li {
+				display: inline-block;
+				list-style-type: none;
+				margin: 0 1rem;
+			}
+			a {
+				color: white;
+				padding: 6px;
+				text-decoration: none;
+				/* font-size: 20px; */
+			}
+			a:hover {
+				color: moccasin;
+			}
+			#anchor1 {
+				border: 2px solid orange;
+			}
+			#anchor2 {
+				border: 2px dotted white;
+			}
+			#anchor3 {
+				border: 2px dashed lightgreen;
+			}
+			#anchor4 {
+				border: 2px double blue;
+			}
+			#anchor5 {
+				border: 2px groove goldenrod;
+			}
+			#anchor6 {
+				border: 2px ridge goldenrod;
+			}
+			#anchor7 {
+				border: 2px inset goldenrod;
+			}
+			#anchor8 {
+				border: 2px outset goldenrod;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#" id="anchor1">Home</a></li>
+				<li><a href="#" id="anchor2">About Us</a></li>
+				<li><a href="#" id="anchor3">Contact</a></li>
+				<li><a href="#" id="anchor4">Blog</a></li>
+				<li><a href="#" id="anchor5">Link 5</a></li>
+				<li><a href="#" id="anchor6">Link 6</a></li>
+				<li><a href="#" id="anchor7">Link 7</a></li>
+				<li><a href="#" id="anchor8">Link 8</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

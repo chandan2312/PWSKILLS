@@ -1,0 +1,96 @@
+<!-- Explain the difference between Absolute and Relative positioning. -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Absolute vs. Relative Positioning</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+
+			#absolute-element {
+				background-color: #3498db;
+				color: white;
+				padding: 1px;
+			}
+
+			#relative-element {
+				position: relative;
+				top: 20px;
+				left: -10px;
+				background-color: #e74c3c;
+				color: white;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Absolute vs. Relative Positioning</h1>
+
+		<h2>Absolute Positioning:</h2>
+		<p>
+			Absolute positioning is a CSS property that allows you to specify the exact
+			position of an element relative to its nearest positioned ancestor or the
+			entire document itself.
+		</p>
+		<p>
+			When an element is set to be positioned absolutely, it is taken out of the
+			normal document flow, meaning it doesn't affect the layout of other elements
+			on the page.
+		</p>
+		<p>
+			You can use properties like <code>top</code>, <code>right</code>,
+			<code>bottom</code>, and <code>left</code> to precisely control where the
+			element should be placed in relation to its containing element or the
+			document.
+		</p>
+		<p>
+			Elements positioned absolutely are often used for creating overlay elements,
+			pop-up windows, or fixed headers/footers that stay in the same place even
+			when the user scrolls the page.
+		</p>
+		<div id="absolute-element">
+			Example CSS for absolute positioning:
+			<pre>
+#absolute-element {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+        </pre
+			>
+		</div>
+
+		<h2>Relative Positioning:</h2>
+		<p>
+			Relative positioning is another CSS property that allows you to adjust the
+			position of an element relative to its normal position in the document flow.
+		</p>
+		<p>
+			When an element is set to be positioned relatively, it remains in the
+			document flow, and its position can be adjusted using properties like
+			<code>top</code>, <code>right</code>, <code>bottom</code>, and
+			<code>left</code>. However, these adjustments do not affect the positions of
+			other elements on the page.
+		</p>
+		<p>
+			Relative positioning is often used when you want to nudge an element slightly
+			from its default position or when you want to layer elements within a
+			container.
+		</p>
+		<div id="relative-element">
+			Example CSS for relative positioning:
+			<pre>
+#relative-element {
+  position: relative;
+  top: 20px;
+  left: -10px;
+}
+        </pre
+			>
+		</div>
+	</body>
+</html>

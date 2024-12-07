@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#home {
+	background-color: #ffffff;
+	height: 120vh;
+	max-width: 100%;
+	display: flex;
+	flex-basis: 1;
+	padding: 0 40px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar .logo:first-child {
+	padding-right: 5px;
+}
+
+/* .navbar .menu{
+    display: flex;
+  } */
+
+.navbar .menu .menu-items {
+	display: flex;
+	gap: 15px;
+}
+
+.menu .menu-items a {
+	text-decoration: none;
+	font-family: "Inter", sans-serif;
+	color: #333333;
+	font-size: 15px;
+	font-weight: 500;
+	align-items: center;
+	line-height: 18.15px;
+}
+
+.menu .menu-btn {
+	display: flex;
+	gap: 10px;
+	padding-top: 10px;
+}
+
+.menu-btn .login {
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	padding: 10px 15px;
+	color: #ffffff;
+	background-color: #fb792b;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.menu-btn .register,
+.menu-btn .agent-login {
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	padding: 10px 15px;
+	color: #333333;
+	border-radius: 5px;
+	border: 1px solid #33333333;
+	outline: 0;
+	cursor: pointer;
+}
+
+.left-container {
+	padding-top: 20px;
+	padding-right: 20px;
+	width: 50%;
+}
+
+.left-container .heading-box {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.heading-box h1 {
+	font-family: "Inter", sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 58px;
+	color: #333333;
+	padding-bottom: 10px;
+}
+
+.heading-box .safety {
+	font-family: "Inter", sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 38px;
+	color: #01bb0a;
+}
+
+.heading-box .security {
+	font-family: "Inter", sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 38px;
+	color: #fb792b;
+}
+
+.heading-box .puntuality {
+	font-family: "Inter", sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 38px;
+	color: #213d77;
+}
+
+.left-container .option-btn {
+	display: flex;
+	gap: 10px;
+	padding-bottom: 30px;
+}
+
+.option-btn .book-ticket {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: #213d77;
+	color: #ffffff;
+	outline: 0;
+	border: 0;
+}
+
+.option-btn .pnr-status {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #333333;
+	outline: 0;
+	border: 1px solid #33333333;
+	transition: all ease-in 0.4s;
+	cursor: pointer;
+}
+
+.pnr-status:hover {
+	background-color: #213d77;
+	color: #ffffff;
+}
+
+.option-btn .charts {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #333333;
+	outline: 0;
+	border: 1px solid #33333333;
+	transition: all ease-in 0.4s;
+	cursor: pointer;
+}
+
+.charts:hover {
+	background-color: #213d77;
+	color: #ffffff;
+}
+
+.left-container .search-train {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+	padding: 10px 0;
+	margin-top: 20px;
+	border: 1px solid #3333331a;
+}
+
+.search-train .from,
+.search-train .To {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.search-train .Date,
+.search-train .class,
+.search-train .Seat-type {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.search-train p {
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	opacity: 80;
+	line-height: 18px;
+	color: #333333;
+}
+
+.search-train h2 {
+	font-family: "Inter", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #333333;
+}
+
+.search-train .icon-bg {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid #ebebeb;
+	position: relative;
+}
+
+.icon-bg i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 50%;
+	color: #333333;
+	font-size: 20px;
+}
+
+.left-container .search-train-btn {
+	margin-top: 50px;
+}
+
+.search-train-btn button {
+	width: 100%;
+	background-color: #01bb0a;
+	color: #ffffff;
+	font-family: "Inter", sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	line-height: 30px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 10px;
+	border: 0;
+	outline: 0;
+}
+
+.search-train-btn i {
+	font-size: 19px;
+}
+
+.right-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}

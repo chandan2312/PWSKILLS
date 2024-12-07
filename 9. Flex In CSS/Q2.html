@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flexbox Layout Properties</title>
+		<style>
+			/* Add some basic styling for readability */
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+
+			h1 {
+				color: #3498db;
+			}
+
+			h2 {
+				color: #e74c3c;
+			}
+
+			ul {
+				list-style-type: disc;
+				margin-left: 20px;
+			}
+
+			li {
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>The Flexbox layout mode in CSS</h1>
+		<p>
+			is designed to make it easier to create flexible and responsive layouts. It
+			offers various properties to control the arrangement and alignment of flex
+			items within a flex container. Here's an explanation of the role of the key
+			properties in the Flexbox layout:
+		</p>
+
+		<h2>1. <code>justify-content</code>:</h2>
+		<ul>
+			<li>
+				<code>justify-content</code> is used to control the horizontal alignment of
+				flex items within a flex container.
+			</li>
+			<li>
+				It determines how extra space is distributed along the main axis (the
+				direction defined by <code>flex-direction</code>).
+			</li>
+			<li>
+				Possible values include:
+				<ul>
+					<li>
+						<code>flex-start</code>: Items are aligned to the start of the container.
+					</li>
+					<li>
+						<code>flex-end</code>: Items are aligned to the end of the container.
+					</li>
+					<li><code>center</code>: Items are centered within the container.</li>
+					<li>
+						<code>space-between</code>: Items are evenly spaced with the first item
+						aligned to the start and the last item aligned to the end.
+					</li>
+					<li>
+						<code>space-around</code>: Items are evenly spaced with equal space on
+						both sides.
+					</li>
+					<li>
+						<code>space-evenly</code>: Items are evenly spaced with equal space
+						between them.
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2>2. <code>align-items</code>:</h2>
+		<ul>
+			<li>
+				<code>align-items</code> is used to control the vertical alignment of flex
+				items within a flex container.
+			</li>
+			<li>
+				It determines how items are aligned along the cross-axis (the axis
+				perpendicular to the main axis).
+			</li>
+			<li>
+				Possible values include:
+				<ul>
+					<li>
+						<code>flex-start</code>: Items are aligned to the start of the cross-axis.
+					</li>
+					<li>
+						<code>flex-end</code>: Items are aligned to the end of the cross-axis.
+					</li>
+					<li><code>center</code>: Items are centered along the cross-axis.</li>
+					<li><code>baseline</code>: Items are aligned based on their baseline.</li>
+					<li>
+						<code>stretch</code>: Items are stretched to fill the container's
+						cross-axis.
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2>3. <code>gap</code>:</h2>
+		<ul>
+			<li>
+				<code>gap</code> is used to define the space between flex items in a flex
+				container.
+			</li>
+			<li>
+				It sets the space between both rows and columns when using the
+				<code>flex-direction: row</code> (default) or
+				<code>flex-direction: column</code> (default) values.
+			</li>
+			<li>
+				It simplifies the process of creating gutters or spacing between items
+				without the need for margin or padding adjustments.
+			</li>
+			<li>
+				It's a shorthand property for <code>row-gap</code> and
+				<code>column-gap</code>.
+			</li>
+		</ul>
+
+		<h2>4. <code>flex-direction</code>:</h2>
+		<ul>
+			<li>
+				<code>flex-direction</code> is used to define the main axis along which flex
+				items are laid out within a flex container.
+			</li>
+			<li>
+				It determines whether items are arranged in a row (default), row-reverse,
+				column, or column-reverse.
+			</li>
+			<li>
+				Changing the <code>flex-direction</code> can alter the flow of items and
+				affect their alignment along the main axis.
+			</li>
+		</ul>
+
+		<h2>5. <code>flex-wrap</code>:</h2>
+		<ul>
+			<li>
+				<code>flex-wrap</code> is used to control whether flex items should wrap to
+				the next line if they don't fit within the flex container's width or height.
+			</li>
+			<li>
+				Possible values include:
+				<ul>
+					<li>
+						<code>nowrap</code> (default): Items are forced to stay in a single line,
+						potentially overflowing the container.
+					</li>
+					<li>
+						<code>wrap</code>: Items wrap to the next line if necessary to fit within
+						the container.
+					</li>
+					<li>
+						<code>wrap-reverse</code>: Items wrap to the next line, but in the reverse
+						order.
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>
+			These key Flexbox properties allow you to create flexible and responsive
+			layouts by controlling the positioning, alignment, and spacing of flex items
+			within a flex container. Using these properties, you can achieve a wide range
+			of layout designs efficiently without relying heavily on complex CSS or
+			positioning techniques.
+		</p>
+	</body>
+</html>

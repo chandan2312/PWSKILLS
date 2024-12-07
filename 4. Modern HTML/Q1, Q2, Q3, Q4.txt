@@ -1,0 +1,63 @@
+------------------------ Q1 - Features Of HTML 5 ------------------------
+
+Semantic Elements
+Audio and Video Support
+Canvas Elements
+Geolocation API
+Local Storage
+Responsive Images
+Web Workers
+Drag and Drop API
+Form Enhancements
+Web Sockets
+Micro Data
+Cross Document Messaging
+
+
+------------------------ Q2 - HTML Entities ------------------------
+
+HTML character entities are used as a replacement of reserved characters in HTML.
+You can also replace characters that are not present on your keyboard by entities.
+These characters are replaced because some characters are reserved in HTML.
+HTML entities provide a wide range of characters which can allow you to add icons, geometric shapes, mathematical operators, etc.
+
+Result      Description                  Entity      Entity Number
+
+<	        less than                   &lt;	     60
+>	        greater than	            &gt;	     62
+&	        ampersand	                &amp;	     38
+"	        double quotation mark	    &quot;	     34
+'	        single quotation mark   	&apos;	     39
+¢	        cent	                    &cent;	     162
+£	        pound	                    &pound;	     163
+¥	        yen	                        &yen;	     165
+€	        Euro	                    &euro;	     8364
+©	        copyright	                &copy;	     169
+®	        registered trademark    	&reg;	     174
+
+
+------------------------ Q3 - Accessibility ------------------------
+
+When websites and web tools are properly designed and coded, people with disabilities can use them.
+However, currently many sites and tools are developed with accessibility barriers that make them difficult or impossible for some people to use.
+
+
+*** Importance
+
+The Web is an increasingly important resource in many aspects of life: 
+education, employment, government, commerce, health care, recreation, and more. 
+It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities.
+
+
+------------------------ Q4 - Ways to Improve Accessibility Of HTML ------------------------
+
+1. Structure and organize with headers
+2. Assign alt tags for images
+3. Use descriptive title for links
+4. Use colors carefully
+5. Design forms for web accessibility
+6. Use tables for tabular data
+7. Ensure site navigation via a keyboard
+8. Turn dynamic content into accessible content
+9. Validate web accessibility
+

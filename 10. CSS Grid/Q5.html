@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* styles.css */
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        grid-gap: 10px;
+      }
+
+      .subcontainer {
+        background-color: lightblue;
+        border: 1px solid blue;
+        justify-self: start;
+      }
+      .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    .description {
+      margin: 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+    }
+    </style>
+  </head>
+  <body>
+    <p>
+      <h1>CSS Grid: justify-items and justify-self</h1>
+      <div class="grid-container">
+        <div class="description">
+          <h2>justify-items:</h2>
+          <p>Applied to the grid container.</p>
+          <p>Sets the default horizontal alignment for all items within the grid.</p>
+          <p>This property aligns all the items in the grid to a common horizontal position.</p>
+        </div>
+        <div class="description">
+          <h2>justify-self:</h2>
+          <p>Applied to individual grid items.</p>
+          <p>Sets the horizontal alignment for a specific grid item within the grid.</p>
+          <p>Allows you to override the default alignment set by justify-items for a specific item.</p>
+        </div>
+      </div>
+      <p>In the example, the justify-items property is used to center all grid items horizontally within the grid container. However, the justify-self property is applied to a specific item, and it overrides the horizontal alignment for that item, setting it to "start."</p>
+      <p>As a result, all items in the grid will be horizontally centered due to justify-items, except for the item with the class "subcontainer" which will align to the start of its grid cell.</p>
+      <p>You can use these properties to control the horizontal alignment of items within your grid, with justify-items setting a default for all items and justify-self allowing you to apply individual alignment to specific items.</p>
+      <p>Example:</p>
+    </p>
+    <div class="container">
+      <div class="subcontainer a">A</div>
+      <div class="subcontainer b">B</div>
+      <div class="subcontainer c">C</div>
+      <div class="subcontainer d">D</div>
+    </div>
+  </body>
+</html>

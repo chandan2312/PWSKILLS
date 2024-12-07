@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 3</title>
+		<style>
+			.grid-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 20px;
+			}
+
+			.description {
+				margin: 0;
+				padding: 10px;
+				border: 1px solid #ccc;
+				background-color: #f0f0f0;
+			}
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 50px 50px;
+
+				gap: 10px;
+				/* grid-auto-rows: 50%; */
+				/* grid-auto-columns: 50%; */
+			}
+			.subcontainer {
+				background-color: lightblue;
+				border: 1px solid blue;
+			}
+			.a {
+				grid-column: 1 / 1;
+			}
+		</style>
+	</head>
+	<body>
+		<h5>
+			grid-auto-row and grid-auto-column are properties in CSS Grid that allows to
+			define the size of implicitly created rows and columns in a grid container.
+			Implicit rows and columns are those that are not explicitly defined using the
+			grid-template-rows and grid-template-columns properties.
+		</h5>
+		<h1>CSS Grid: grid-auto-row and grid-auto-column</h1>
+		<div class="grid-container">
+			<div class="description">
+				<h2>grid-auto-row:</h2>
+				<p>Defines the size of implicitly created rows in a grid.</p>
+				<p>
+					Applied when the number of rows created exceeds those explicitly defined
+					using grid-template-rows.
+				</p>
+				<p>Controls the height of these additional, implicitly generated rows.</p>
+			</div>
+			<div class="description">
+				<h2>grid-auto-column:</h2>
+				<p>Defines the size of implicitly created columns in a grid.</p>
+				<p>
+					Applied when the number of columns created exceeds those explicitly defined
+					using grid-template-columns.
+				</p>
+				<p>Controls the width of these additional, implicitly generated columns.</p>
+			</div>
+		</div>
+		<p>
+			For example, if you have a grid container with explicit rows and columns
+			defined and add more items than the specified rows or columns, the grid will
+			automatically generate additional rows or columns. The size of these
+			additional rows or columns is determined by <code>grid-auto-row</code> and
+			<code>grid-auto-column</code>.
+		</p>
+		<p>
+			You can use these properties to customize the dimensions of implicitly
+			generated rows and columns, allowing for flexible grid layouts.
+		</p>
+
+		<div class="container">
+			<div class="subcontainer a">A</div>
+			<div class="subcontainer b">B</div>
+			<div class="subcontainer c">C</div>
+			<div class="subcontainer d">D</div>
+		</div>
+	</body>
+</html>

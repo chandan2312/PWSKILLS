@@ -1,0 +1,44 @@
+<!--  Create a navigation bar similar to the below-mentioned image. The navigation bar must contain 5
+navigation links that are properly placed within the navigation bar using the CSS box model. The navigation
+items must change their text color on hover. -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 1</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				padding: 1rem;
+				background-color: cornflowerblue;
+			}
+			li {
+				display: inline-block;
+				list-style-type: none;
+				margin: 0 1rem;
+			}
+			a {
+				color: white;
+				/* font-size: 20px; */
+			}
+			a:hover {
+				color: moccasin;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>

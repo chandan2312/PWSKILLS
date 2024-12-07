@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Create Sign In & Sign Up Form</title>
+	</head>
+	<body>
+		<form>
+			<label for="firstName"
+				>First Name:
+				<input
+					id="firstName"
+					placeholder="First Name"
+					name="firstName"
+					type="text"
+					required
+					minlength="3"
+					max="20"
+				/>
+			</label>
+			<br />
+			<label for="lastName"
+				>Last Name:
+				<input
+					id="lastName"
+					placeholder="Last Name"
+					name="lastName"
+					type="text"
+					required
+					minlength="3"
+					max="20"
+				/>
+			</label>
+			<br />
+			<label for="email"
+				>Email:
+				<input
+					id="email"
+					name="email"
+					placeholder="mail@example.com"
+					type="email"
+					required
+				/>
+			</label>
+			<br />
+			<label for="password"
+				>Password:
+				<input
+					id="password"
+					type="password"
+					placeholder="Enter Password"
+					name="password"
+					min="8"
+					required
+				/>
+			</label>
+			<br />
+			<label for="confirmPassword"
+				>Confirm Password:
+				<input
+					id="confirmPassword"
+					name="confirmPassword"
+					type="password"
+					placeholder="Enter Same Password"
+					required
+				/>
+			</label>
+			<br />
+			<label for="age"
+				>Age:
+				<input
+					id="age"
+					name="age"
+					type="number"
+					placeholder="28"
+					min="0"
+					max="156"
+					required
+				/>
+			</label>
+			<br />
+			<label for=""
+				>Gender:
+				<input type="radio" id="male" name="gender" value="male" checked />
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female" />
+				<label for="female">Female</label>
+				<input type="radio" id="other" name="gender" value="other" />
+				<label for="other">Other</label>
+			</label>
+			<br />
+			<label for="terms"
+				>Terms: <input type="checkbox" required id="terms" /> I agree to terms and
+				conditions
+			</label>
+			<br />
+			<button type="submit">Sign Up</button>
+		</form>
+	</body>
+</html>
